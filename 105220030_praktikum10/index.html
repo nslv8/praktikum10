@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rock Paper Scissor</title>
+</head>
+<body>
+    <div class="title-container">
+        <h1>Rock Paper Scissor</h1>
+    </div>
+
+    <div class="player-hands-container">
+        <button class="button rock" onclick="play(0)"></button>
+        <button class="button paper" onclick="play(1)"></button>
+        <button class="button scissor" onclick="play(2)"></button>
+    </div>
+    
+    <div class="modal">
+        <div class="modal-content">
+            <h1>The Winner is:</h1>
+            <div id="winner"></div>
+            <div class="last-moves-container">
+                <h2>Result</h2>
+                <div id="moves"></div>
+            </div>
+            <button class="btn-restart" onclick="restart()"><h4>Play Again!</h4></button>
+        </div>
+    </div>
+</body>
+    <script type="text/javascript" src="script.js"></script>
+</html>
